@@ -1,0 +1,11 @@
+newFunction();
+
+function newFunction() {
+    {
+
+    }
+}
+
+
+
+
