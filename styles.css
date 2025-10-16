@@ -975,6 +975,7 @@ h4 {
 
   .contact-item p{
     font-size: 17px;
+    text-decoration: none;
   }
 
   .contact-item p a{
