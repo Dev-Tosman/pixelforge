@@ -13,12 +13,15 @@ body {
 
 .nav-section {
   position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
   display: flex;
-  flex-wrap: wrap;
   background-color: transparent;
   justify-content: space-between;
   width: 100%;
   backdrop-filter: blur(5px);
+  z-index: 1000;
 }
 
 .nav-section h1 {
@@ -50,8 +53,6 @@ body {
   position: relative;
   top: 15px;
   left: 70px;
-  flex-wrap: wrap;
-  flex-grow: calc(100% - 50px);
 }
 
 .hamburger span {
@@ -303,7 +304,7 @@ body {
 }
 
 .contact-item p a {
-    color: rgb(92, 90, 90);
+  color: rgb(92, 90, 90);
 }
 
 .site-footer {
@@ -528,7 +529,7 @@ h4 {
 }
 
 .testimonial div {
-    padding: 20px;
+  padding: 20px;
   margin-bottom: 50px;
   font-style: italic;
   box-shadow: 0 0 10px lightgrey;
@@ -538,8 +539,8 @@ h4 {
   margin-bottom: 10px;
 }
 
-.testimonial h5{
-    margin-top: 20px;
+.testimonial h5 {
+  margin-top: 20px;
 }
 
 .gallery-section {
@@ -858,7 +859,7 @@ h4 {
     margin-top: 5px;
   }
 
-  .logo{
+  .logo {
     font-size: 25px;
   }
 
@@ -866,25 +867,34 @@ h4 {
     display: none;
     color: white;
     font-size: 20px;
+    top: 60px;
     background-color: red;
     padding: 10px;
     border-radius: 5px;
     width: 100%;
-   
+    position: absolute;
+    flex-direction: column;
   }
 
   .nav-list li {
     margin: 5px;
   }
 
+  .nav-link,
+  .nav-btn {
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+
   #menu-toggle:checked ~ .nav-list {
     display: flex;
-    flex-direction: column;
   }
 
   #menu-toggle:checked ~ .hamburger span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
-    top: 10px;
   }
 
   #menu-toggle:checked ~ .hamburger span:nth-child(2) {
@@ -893,18 +903,17 @@ h4 {
 
   #menu-toggle:checked ~ .hamburger span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
-    top: 10px;
   }
 
-  .hero-text-block h2{
+  .hero-text-block h2 {
     font-size: 30px;
   }
 
-  .hero-text-block p{
+  .hero-text-block p {
     font-size: 15px;
   }
 
-  .hero-overlay a{
+  .hero-overlay a {
     font-size: 15px;
   }
 
@@ -920,7 +929,7 @@ h4 {
     text-align: center;
   }
 
-  .index-about img{
+  .index-about img {
     width: 100%;
     height: auto;
     margin-top: 20px;
@@ -973,23 +982,157 @@ h4 {
     font-size: 20px;
   }
 
-  .contact-item p{
+  .contact-item p {
     font-size: 17px;
     text-decoration: none;
   }
 
-  .contact-item p a{
+  .contact-item p a {
     font-size: 15px;
     text-align: center;
   }
 
-  .site-footer{
+  .site-footer {
     text-align: left;
   }
 
-  .footer-content{
+  .footer-content {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+  }
+
+  .hero-banner {
+    height: 50vh;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-section img {
+    width: 100%;
+  }
+
+  .mission-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mission-section img {
+    width: 100%;
+    margin-bottom: -50px;
+  }
+
+  .mission-text {
+    margin-top: 30px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .team-members {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery-section h2 {
+    font-size: 25px;
+  }
+
+  .gallery-image {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .cta-section {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+  .cta-button {
+    font-size: 15px;
+  }
+
+  .product-banner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+  }
+
+  .product-banner h1 {
+    font-size: 25px;
+  }
+
+  .product-section h2 {
+    font-size: 35px;
+  }
+  .product {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .product img {
+    width: 100%;
+  }
+
+  .product-details {
+    text-align: center;
+    height: 550px;
+    width: 100%;
+  }
+
+  .product-details h3 {
+    font-size: 25px;
+  }
+
+  .product-details h4 {
+    margin-top: -3px;
+  }
+
+  .product-details ul li {
+    text-align: left;
+  }
+
+  .direct-contact-section h2 {
+    font-size: 25px;
+    margin-bottom: -30px;
+    padding-top: 30px;
+  }
+
+  .contact-info-section {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+
+  .contactinfo p {
+    text-align: center;
+  }
+
+  .location-section {
+    margin-top: 30px;
+  }
+
+  .location-section h2{
+font-size: 25px;
+  }
+
+  .contact-form-container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .form-container {
+   width: auto;
+   margin: auto;
+  }
+
+  .map-container{
+    width: 100%;
   }
 }
