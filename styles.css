@@ -853,11 +853,11 @@ h4 {
   body {
     overflow-x: hidden;
   }
-  .hamburger {
+  /* .hamburger {
     display: flex;
     margin-right: -190px;
     margin-top: 5px;
-  }
+  } */
 
   .logo {
     font-size: 25px;
@@ -880,15 +880,15 @@ h4 {
     margin: 5px;
   }
 
-  .nav-link,
-  .nav-btn {
-    font-size: 18px;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    padding: 10px;
+
+  .hamburger{
+    display: block;
   }
 
+  .nav-list:active{
+    display: flex;
+  }
+/* 
   #menu-toggle:checked ~ .nav-list {
     display: flex;
   }
@@ -903,7 +903,7 @@ h4 {
 
   #menu-toggle:checked ~ .hamburger span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
-  }
+  } */
 
   .hero-text-block h2 {
     font-size: 30px;
