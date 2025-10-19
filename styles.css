@@ -86,7 +86,7 @@ body {
 
 .nav-btn {
   text-decoration: none;
-  color: white;
+  color: white !important;
   background-color: red;
   padding: 5px 10px;
   border-radius: 5px;
